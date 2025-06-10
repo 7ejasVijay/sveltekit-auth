@@ -3,6 +3,5 @@
   import SignUp from "$lib/components/SignUpForm.svelte"
 </script>
 
-<SignIn />
-<SignUp />
+<a href="/sign-up">Sign up</a>
 
