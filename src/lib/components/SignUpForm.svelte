@@ -12,14 +12,15 @@
     }
 </script>
 <form method="POST" class="space-y-5 {$$props.class}">
-    <Input label="Email" id="email" name="email" type="email" bind:value={email} />
-    <Input label="Password" id="password" name="password" type="password" bind:value={password} />
+    <Input label="Email" id="email" name="email" type="email" bind:value={email} required />
+    <Input label="Password" id="password" name="password" type="password" bind:value={password} required />
     <Input
         label="Confirm Password"
         id="confirm-password"
         name="confirm-password"
         type="password"
         bind:value={confirmPassword}
+        required
     />
     {#if confirmPassword !== "" && confirmPassword !== password}
         <p class="text-red-600 text-sm font-semibold">Password not match</p>
