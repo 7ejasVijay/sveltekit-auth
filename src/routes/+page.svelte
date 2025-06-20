@@ -1,2 +1,6 @@
-<a href="/sign-up">Sign up</a>
-<a href="sign-in">Sign in</a>
+<script>
+  const signUp = "Sign Up";
+  const signIn = "Sign In";
+</script>
+<a href="/sign-up">{signUp}</a>
+<a href="sign-in">{signIn}</a>
